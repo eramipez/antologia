@@ -1,0 +1,118 @@
+Prefix(:=<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3>
+
+Declaration(Class(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Alfalfa>))
+Declaration(Class(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Animal>))
+Declaration(Class(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Caballo>))
+Declaration(Class(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Cevada>))
+Declaration(Class(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Conejo>))
+Declaration(Class(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Jirafa>))
+Declaration(Class(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#León>))
+Declaration(Class(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Oso>))
+Declaration(Class(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Pantera>))
+Declaration(Class(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Pasto>))
+Declaration(Class(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Planta>))
+Declaration(Class(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Tigre>))
+Declaration(Class(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Venado>))
+Declaration(Class(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#carnivoros>))
+Declaration(Class(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#herbivoros>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Es_comido_por>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#come>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Es_comido_por> (<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Es_comido_por>)
+
+InverseObjectProperties(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Es_comido_por> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#come>)
+SymmetricObjectProperty(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Es_comido_por>)
+ObjectPropertyDomain(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Es_comido_por> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Animal>)
+ObjectPropertyDomain(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Es_comido_por> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Planta>)
+ObjectPropertyRange(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Es_comido_por> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#carnivoros>)
+ObjectPropertyRange(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Es_comido_por> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#herbivoros>)
+
+# Object Property: <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#come> (<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#come>)
+
+SymmetricObjectProperty(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#come>)
+ObjectPropertyDomain(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#come> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#carnivoros>)
+ObjectPropertyDomain(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#come> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#herbivoros>)
+ObjectPropertyRange(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#come> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Animal>)
+ObjectPropertyRange(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#come> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Planta>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Alfalfa> (<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Alfalfa>)
+
+SubClassOf(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Alfalfa> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Planta>)
+
+# Class: <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Animal> (<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Animal>)
+
+EquivalentClasses(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Animal> ObjectAllValuesFrom(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Es_comido_por> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#carnivoros>))
+DisjointClasses(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Animal> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Planta>)
+
+# Class: <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Caballo> (<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Caballo>)
+
+SubClassOf(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Caballo> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#herbivoros>)
+
+# Class: <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Cevada> (<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Cevada>)
+
+SubClassOf(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Cevada> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Planta>)
+
+# Class: <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Conejo> (<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Conejo>)
+
+SubClassOf(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Conejo> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#herbivoros>)
+
+# Class: <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Jirafa> (<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Jirafa>)
+
+SubClassOf(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Jirafa> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#herbivoros>)
+
+# Class: <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#León> (<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#León>)
+
+SubClassOf(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#León> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#carnivoros>)
+
+# Class: <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Oso> (<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Oso>)
+
+SubClassOf(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Oso> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#carnivoros>)
+
+# Class: <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Pantera> (<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Pantera>)
+
+SubClassOf(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Pantera> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#carnivoros>)
+
+# Class: <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Pasto> (<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Pasto>)
+
+SubClassOf(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Pasto> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Planta>)
+
+# Class: <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Planta> (<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Planta>)
+
+EquivalentClasses(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Planta> ObjectAllValuesFrom(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Es_comido_por> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#herbivoros>))
+
+# Class: <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Tigre> (<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Tigre>)
+
+SubClassOf(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Tigre> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#carnivoros>)
+
+# Class: <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Venado> (<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Venado>)
+
+SubClassOf(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Venado> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#herbivoros>)
+
+# Class: <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#carnivoros> (<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#carnivoros>)
+
+EquivalentClasses(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#carnivoros> ObjectAllValuesFrom(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#come> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Animal>))
+SubClassOf(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#carnivoros> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Animal>)
+
+# Class: <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#herbivoros> (<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#herbivoros>)
+
+EquivalentClasses(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#herbivoros> ObjectAllValuesFrom(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#come> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Planta>))
+SubClassOf(<http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#herbivoros> <http://www.semanticweb.org/erami/ontologies/2023/3/untitled-ontology-3#Animal>)
+
+
+)
